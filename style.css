@@ -96,5 +96,6 @@ input[type="text"] {
 @media (max-width: 600px) {
     #add {
     margin-top: 4rem;
+    text-align: center;
     }
 }
