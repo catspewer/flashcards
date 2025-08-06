@@ -1,12 +1,48 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta name="vieeport" content="width=device-width, initial scale=1.0">
-        <meta charset="uft-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
         <title>Flashcard App</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <header>
+            <h1>Flash Card App</h1>
+        </header>
+        <div class="flashcardContainer">
+            <div class="flashcards" id="flashcard">
+                <div class="card-inner" id="card-inner">
+                <div class="front" id="front-card">hello</div>
+                <div class="back" id="back-card">hallo</div>
+                </div>
+                <div class="card-buttons">
+                <button id="flip-button" onclick="flip()">Flip</button>
+                <button id="next-button" onclick="next()">Next</button>
+                <button id="delete-button">Delete</button>
+                </div>
+            </div>
+        </div>
+        <section id="add">
+            <h2>Add a Card</h2>
+            <form id="add-card-form">
+                <label>Front:
+                    <input type="text" id="new-front" required>
+                </label>
+                <br>
+                <label>Back:
+                    <input type="text" id="new-back" required>
+                </label>
+                <button type="submit">Make a New Card</button>
+            </form>
+        </section>
+        <section id="made">
+            <button onclick="goToMadeCards()">Go to Made Cards</button>
+        </section>
+        <section id="card-list">
+            <h2>Your Cards</h2>
+            <ul id="card-list-container"></ul>
+        </section>
         <script src="script.js"></script>
     </body>
 </html>
