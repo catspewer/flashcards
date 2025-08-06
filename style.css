@@ -92,3 +92,9 @@ input[type="text"] {
 #add {
     margin-left: 6rem;
 }
+
+@media (max-width: 600px) {
+    #add {
+    margin-top: 4rem;
+    }
+}
